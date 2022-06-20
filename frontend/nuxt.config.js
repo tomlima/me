@@ -17,11 +17,11 @@ export default {
     scss: ['~/assets/scss/variables.scss']
   },
   publicRuntimeConfig: {
-    ImagePathUlr: 'http://localhost:1337', // Only for backend purposes
-    strapiAPI: 'http://localhost:1337/api/', // Only for backend purposes
+    ImagePathUlr: 'https://admin.tomlima.me', // Only for backend purposes
+    strapiAPI: 'https://admin.tomlima.me/api/', // Only for backend purposes
   },
   axios: {
-    baseURL: 'http://localhost:1337/api/'
+    baseURL: 'https://admin.tomlima.me/api/'
   },
 
   css: [
