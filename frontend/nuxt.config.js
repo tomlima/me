@@ -1,8 +1,7 @@
 export default {
   telemetry: false,
-  serverMiddleware: [{ path: '/api', handler: '~/api/server.js' }],
   head: {
-    title: 'Iamtomlima',
+    title: 'Tomlima',
     htmlAttrs: {
       lang: 'pt-BR'
     },
@@ -20,7 +19,6 @@ export default {
   publicRuntimeConfig: {
     ImagePathUlr: 'http://localhost:1337', // Only for backend purposes
     strapiAPI: 'http://localhost:1337/api/', // Only for backend purposes
-    localAPI: 'http://localhost:3000/api/'
   },
   axios: {
     baseURL: 'http://localhost:1337/api/'
@@ -34,7 +32,6 @@ export default {
 
   plugins: [
     { src: '~/plugins/image' }, // Only for backend purposes
-    { src: '~/plugins/errorHandle' }
   ],
 
   components: [

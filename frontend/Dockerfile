@@ -1,9 +1,7 @@
 FROM node:14 
 
-ARG NODE_ENV
 
 ENV HOST 0.0.0.0
-ENV NODE_ENV=${NODE_ENV}
 ENV NEXT_TELEMETRY_DISABLED 1
 
 WORKDIR /app 
@@ -18,4 +16,4 @@ RUN npm run build
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["pm2", "start"]
